@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>EmmyTech — Web Developer</title>
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;600&display=swap" rel="stylesheet"/> -->
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+  <!-- Custom Cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- Background -->
+  <div class="grid-lines"></div>
+  <canvas id="starfield"></canvas>
+
+  <!-- NAV -->
+  <nav>
+    <div class="nav-logo">Emmy<span>Tech</span></div>
+    <ul class="nav-links">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+   <button class="hamburger" id="hamburgerBtn" aria-label="Menu">
+  <span></span><span></span><span></span>
+</button>
+  </nav>
+  <div class="mobile-menu" id="mobileMenu">
+  <a href="#hero">Home</a>
+  <a href="#about">About</a>
+  <a href="#services">Services</a>
+  <a href="#skills">Skills</a>
+  <a href="#projects">Projects</a>
+  <a href="#contact">Contact</a>
+</div>
+   
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-tag">⚡ Available for Projects</div>
+    <h1 class="hero-title">
+      Web Developer
+      <span class="highlight">& Digital Builder</span>
+    </h1>
+    <p class="hero-sub">I design and build fast, beautiful websites for Nigerian businesses — from landing pages to full e-commerce stores.</p>
+    <div class="hero-btns">
+      <a href="#projects" class="btn-primary">View My Work</a>
+      <a href="#contact" class="btn-outline">Hire Me</a>
+    </div>
+    <div class="scene">
+      <div class="cube">
+        <div class="face front">HTML</div>
+        <div class="face back">CSS</div>
+        <div class="face left">JS</div>
+        <div class="face right">UI/UX</div>
+        <div class="face top">WEB</div>
+        <div class="face bottom">DEV</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <div class="stats-bar reveal">
+    <div class="stat">
+      <span class="stat-num" data-target="20">0</span>
+      <span class="stat-label">Projects Built</span>
+    </div>
+    <div class="stat">
+      <span class="stat-num" data-target="15">0</span>
+      <span class="stat-label">Happy Clients</span>
+    </div>
+    <div class="stat">
+      <span class="stat-num" data-target="1">0</span>
+      <span class="stat-label">Years Experience</span>
+    </div>
+    <div class="stat">
+      <span class="stat-num" data-target="100">0</span>
+      <span class="stat-label">% Satisfaction</span>
+    </div>
+  </div>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="about-visual reveal">
+      <div class="about-card">
+        <div class="about-card-label">// Developer Profile</div>
+        <div class="about-card-name">Emmanuel<br/>EmmyTech</div>
+        <div class="about-card-role">Frontend Web Developer · Ibadan, Nigeria</div>
+        <p class="about-card-desc">Building the digital future one pixel at a time. I create high-quality websites and web apps for businesses that want to stand out online.</p>
+        <div class="corner-decoration"></div>
+      </div>
+    </div>
+    <div class="about-text reveal">
+      <h2 class="section-title">About <span>Me</span></h2>
+      <div class="section-line"></div>
+      <p>I'm a Web developer based in Ibadan, Nigeria, operating under the brand <strong style="color:var(--cyan)">EmmyTech</strong>. I specialize in building clean, modern, and responsive websites that help Nigerian businesses grow their online presence.</p>
+      <p>From small local shops to growing companies, I deliver websites that don't just look good — they convert visitors into customers. My approach is simple: understand your business, then build something that works.</p>
+      <p>I work with HTML, CSS, JavaScript, and I'm constantly learning new tools to deliver better results for every client.</p>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services">
+    <div class="services-header reveal">
+      <h2 class="section-title">My <span>Services</span></h2>
+      <div class="section-line"></div>
+      <p style="color:rgba(200,232,240,0.5); max-width:500px; margin:0 auto; font-weight:300;">Everything you need to establish a powerful online presence</p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card reveal">
+        <div class="service-number">01</div>
+        <div class="service-icon">🌐</div>
+        <h3>Business Websites</h3>
+        <p>Professional multi-page websites for local businesses — designed to impress customers and rank on Google.</p>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-number">02</div>
+        <div class="service-icon">🛒</div>
+        <h3>E-Commerce Stores</h3>
+        <p>Online stores with product listings, shopping cart, and WhatsApp checkout integration for Nigerian markets.</p>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-number">03</div>
+        <div class="service-icon">📱</div>
+        <h3>Responsive Design</h3>
+        <p>Every site I build looks perfect on mobile, tablet, and desktop — no compromises.</p>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-number">04</div>
+        <div class="service-icon">🎨</div>
+        <h3>Portfolio Sites</h3>
+        <p>Stunning portfolio websites for creatives, artists, and professionals to showcase their work online.</p>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-number">05</div>
+        <div class="service-icon">⚡</div>
+        <h3>Landing Pages</h3>
+        <p>High-converting single-page sites for product launches, events, or marketing campaigns.</p>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-number">06</div>
+        <div class="service-icon">🔧</div>
+        <h3>Site Maintenance</h3>
+        <p>Ongoing support, updates, and improvements to keep your website running at its best.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <h2 class="section-title reveal">Tech <span>Stack</span></h2>
+    <div class="section-line reveal"></div>
+    <div class="skills-grid">
+      <div class="skill-item reveal">
+        <div class="skill-name">HTML5</div>
+        <div class="skill-pct">95%</div>
+        <div class="skill-bar"><div class="skill-fill" data-width="95"></div></div>
+      </div>
+      <div class="skill-item reveal">
+        <div class="skill-name">CSS3</div>
+        <div class="skill-pct">90%</div>
+        <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+      </div>
+      <div class="skill-item reveal">
+        <div class="skill-name">JavaScript</div>
+        <div class="skill-pct">80%</div>
+        <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+      </div>
+      <div class="skill-item reveal">
+        <div class="skill-name">Responsive Design</div>
+        <div class="skill-pct">92%</div>
+        <div class="skill-bar"><div class="skill-fill" data-width="92"></div></div>
+      </div>
+      <div class="skill-item reveal">
+        <div class="skill-name">UI/UX Design</div>
+        <div class="skill-pct">85%</div>
+        <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+      </div>
+      <div class="skill-item reveal">
+        <div class="skill-name">GitHub / Deployment</div>
+        <div class="skill-pct">78%</div>
+        <div class="skill-bar"><div class="skill-fill" data-width="78"></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="projects-header reveal">
+      <h2 class="section-title">Featured <span>Projects</span></h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="projects-grid">
+      <div class="project-card reveal">
+        <div class="project-thumb">🏠</div>
+        <div class="project-info">
+          <div class="project-tag">Real Estate</div>
+          <h3>Apex Properties</h3>
+          <p>Multi-page real estate & architecture website with hero slider, scroll animations, and service subpages.</p>
+          <a href="https://nimble-otter-98daea.netlify.app/" class="project-link">View Project →</a>
+        </div>
+      </div>
+      <div class="project-card reveal">
+        <div class="project-thumb">📱</div>
+        <div class="project-info">
+          <div class="project-tag">E-Commerce</div>
+          <h3>CrownCart Store</h3>
+          <p>Full e-commerce store with user auth, per-user cart, order history, and WhatsApp checkout integration.</p>
+          <a href="https://superb-custard-d78fa9.netlify.app/" class="project-link">View Project →</a>
+        </div>
+      </div>
+      <div class="project-card reveal">
+        <div class="project-thumb">🎨</div>
+        <div class="project-info">
+          <div class="project-tag">Creative Services</div>
+          <h3>DamyCrewn</h3>
+          <p>Website for a creative services business offering painting, wallpaper installation, graphic design, and artwork.</p>
+          <a href="https://zingy-fenglisu-33024b.netlify.app/#" class="project-link">View Project →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <h2 class="contact-title reveal">
+      Let's Build<br/><span>Something Great</span>
+    </h2>
+    <p class="contact-sub reveal">Ready to take your business online? I'm available for new projects. Let's talk.</p>
+    <div class="contact-grid reveal">
+      <div class="contact-item">
+        <div class="contact-item-icon">📧</div>
+        <div class="contact-item-label">Email</div>
+        <div class="contact-item-value">emmytech.official@gmail.com</div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-item-icon">💬</div>
+        <div class="contact-item-label">WhatsApp</div>
+        <div class="contact-item-value">+234 707 870 9384</div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-item-icon">🌍</div>
+        <div class="contact-item-label">Location</div>
+        <div class="contact-item-value">Ibadan, Nigeria</div>
+      </div>
+    </div>
+   <a href="https://wa.me/2347078709384?text=Hi%20EmmyTech%2C%20I%20want%20to%20hire%20you" target="_blank" class="btn-grad" style="display:inline-block; margin-top:20px;">Send Me a Message</a>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-logo">EmmyTech</div>
+    <div class="footer-copy">© 2025 EmmyTech. Designed & Built by EmmyTech · Ibadan, Nigeria</div>
+  </footer>
+
+  <script>
+    
+    // ── CURSOR ──
+    const cursor = document.getElementById('cursor');
+    const ring = document.getElementById('cursorRing');
+    document.addEventListener('mousemove', e => {
+      cursor.style.left = e.clientX + 'px';
+      cursor.style.top  = e.clientY + 'px';
+      setTimeout(() => {
+        ring.style.left = e.clientX + 'px';
+        ring.style.top  = e.clientY + 'px';
+      }, 80);
+    });
+
+    // ── STARFIELD ──
+    const canvas = document.getElementById('starfield');
+    const ctx = canvas.getContext('2d');
+    let stars = [];
+    function resize() {
+      canvas.width  = window.innerWidth;
+      canvas.height = window.innerHeight;
+    }
+    function initStars() {
+      stars = [];
+      for (let i = 0; i < 180; i++) {
+        stars.push({
+          x: Math.random() * canvas.width,
+          y: Math.random() * canvas.height,
+          r: Math.random() * 1.2 + 0.2,
+          speed: Math.random() * 0.3 + 0.05,
+          opacity: Math.random() * 0.6 + 0.2
+        });
+      }
+    }
+    function drawStars() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      stars.forEach(s => {
+        ctx.beginPath();
+        ctx.arc(s.x, s.y, s.r, 0, Math.PI * 2);
+        ctx.fillStyle = `rgba(0,245,255,${s.opacity})`;
+        ctx.fill();
+        s.y += s.speed;
+        if (s.y > canvas.height) { s.y = 0; s.x = Math.random() * canvas.width; }
+      });
+      requestAnimationFrame(drawStars);
+    }
+    resize(); initStars(); drawStars();
+    window.addEventListener('resize', () => { resize(); initStars(); });
+
+    // ── SCROLL REVEAL ──
+    const reveals = document.querySelectorAll('.reveal');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((e, i) => {
+        if (e.isIntersecting) {
+          setTimeout(() => e.target.classList.add('visible'), i * 80);
+        }
+      });
+    }, { threshold: 0.1 });
+    reveals.forEach(r => observer.observe(r));
+
+    // ── SKILL BARS ──
+    const skillObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.querySelectorAll('.skill-fill').forEach(bar => {
+            bar.style.width = bar.dataset.width + '%';
+          });
+        }
+      });
+    }, { threshold: 0.3 });
+    const skillSection = document.getElementById('skills');
+    if (skillSection) skillObserver.observe(skillSection);
+
+    // ── COUNTER ANIMATION ──
+    const counterObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.querySelectorAll('.stat-num').forEach(el => {
+            const target = +el.dataset.target;
+            let current = 0;
+            const step = target / 60;
+            const timer = setInterval(() => {
+              current += step;
+              if (current >= target) { el.textContent = target + (target === 100 ? '%' : '+'); clearInterval(timer); }
+              else el.textContent = Math.floor(current) + (target === 100 ? '%' : '+');
+            }, 25);
+          });
+          counterObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.5 });
+    const statsBar = document.querySelector('.stats-bar');
+    if (statsBar) counterObserver.observe(statsBar);
+    
+    // ── HAMBURGER ──
+const hamburgerBtn = document.getElementById('hamburgerBtn');
+const mobileMenu = document.getElementById('mobileMenu');
+
+hamburgerBtn.addEventListener('click', () => {
+  hamburgerBtn.classList.toggle('open');
+  mobileMenu.classList.toggle('open');
+});
+
+// Close menu when a link is clicked
+mobileMenu.querySelectorAll('a').forEach(link => {
+  link.addEventListener('click', () => {
+    hamburgerBtn.classList.remove('open');
+    mobileMenu.classList.remove('open');
+  });
+});
+  </script>
+</body>
+</html>
