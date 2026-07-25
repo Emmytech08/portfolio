@@ -105,6 +105,19 @@
     }
 
     /* ── NAV ── */
+    .nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.logo-img {
+  height: 60px;
+  width: 60px;
+  object-fit: contain;
+  border-radius: 50%;
+  border: 2px solid var(--cyan);
+}
     nav {
       position: fixed; top: 0; left: 0; right: 0;
       z-index: 100;
